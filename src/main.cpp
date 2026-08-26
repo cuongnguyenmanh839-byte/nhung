@@ -1,13 +1,7 @@
 #include <Arduino.h>
-#define LED_PIN 13
+#define LED_PIN 2
 #define SENSOR_PIN A0
-
-int threshold = 500;
-
-void setup() {
-    pinMode(LED_PIN, OUTPUT);
-    pinMode(SENSOR_PIN, INPUT);
-}
+int threshold = 600;
 
 void loop() {
     int value = analogRead(SENSOR_PIN);
