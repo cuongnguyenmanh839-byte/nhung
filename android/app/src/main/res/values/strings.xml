@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ATK LIGHT</string>
+    <string name="title_activity_main">ATK LIGHT</string>
+    <string name="package_name">vn.atkdinhhoa.light</string>
+    <string name="custom_url_scheme">vn.atkdinhhoa.light</string>
+</resources>

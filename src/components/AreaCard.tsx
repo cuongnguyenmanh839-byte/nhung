@@ -1,0 +1,3 @@
+import { ChevronRight } from 'lucide-react';
+import type { Area } from '../data/mock';
+export function AreaCard({area,onClick}:{area:Area;onClick:()=>void}){return <button className="area-card" onClick={onClick} aria-label={`${area.on?'Tắt':'Bật'} ${area.name}`} aria-pressed={area.on}><span className={`area-icon icon-${area.icon}`} aria-hidden="true"/><div><strong>{area.name}</strong><span>{area.lamps} đèn</span><small className={area.on?'green':''}><i className={area.on?'status-dot on':'status-dot'}/>{area.on?'Đang bật':'Đã tắt'}</small></div><ChevronRight className="area-chevron"/></button>;}

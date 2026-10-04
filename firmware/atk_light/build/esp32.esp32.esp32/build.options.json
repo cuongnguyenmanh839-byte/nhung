@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "..\\..",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "compiler.cpp.extra_flags=-DATK_DRIVER_CCT",
+  "fqbn": "esp32:esp32:esp32",
+  "hardwareFolders": "C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.11,C:\\Users\\Admin\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.11",
+  "otherLibrariesFolders": "C:\\Users\\Admin\\Documents\\Arduino\\libraries",
+  "sketchLocation": "C:\\Users\\Admin\\Desktop\\DỰ-ÁN\\VU-DIEU-ANH-SANG\\firmware\\atk_light"
+}

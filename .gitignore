@@ -1,0 +1,14 @@
+node_modules/
+.npm-cache/
+.tooling/
+firmware/build/
+.gradle-home/
+test-results/
+playwright-report/
+dist/
+*.tsbuildinfo
+.env
+android/.gradle/
+android/local.properties
+android/app/build/
+android/build/

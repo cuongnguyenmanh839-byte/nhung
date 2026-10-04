@@ -1,0 +1,6 @@
+import { useEffect, useState } from 'react';
+import { useLighting } from './hooks/useLighting';
+import { Desktop } from './layouts/Desktop';
+import { Mobile } from './layouts/Mobile';
+import { DetailPanel } from './pages/DetailPanel';
+export default function App(){const state=useLighting(),[page,setPage]=useState('Tổng quan');const [size,setSize]=useState({width:window.innerWidth,height:window.innerHeight});useEffect(()=>{const resize=()=>setSize({width:window.innerWidth,height:window.innerHeight});window.addEventListener('resize',resize);return()=>window.removeEventListener('resize',resize);},[]);const mobile=size.width<=768;const scale=mobile?size.width/238:Math.min(size.width/900,size.height/556);return <div className={mobile?'app-shell mobile-shell':'app-shell desktop-shell'} style={{height:mobile?Math.max(size.height,514*scale):size.height}}><div className="scaled-app" style={{width:mobile?238:size.width/scale,minHeight:mobile?Math.max(514,size.height/scale):556,zoom:scale}}>{mobile?<Mobile state={state} onNavigate={setPage}/>:<Desktop state={state} onNavigate={setPage}/>}</div>{page!=='Tổng quan'&&<DetailPanel page={page} state={state} onClose={()=>setPage('Tổng quan')}/>}{state.error&&page==='Tổng quan'&&<div className="device-error" role="alert">{state.error}<button onClick={state.clearError} aria-label="Đóng thông báo">×</button></div>}</div>;}

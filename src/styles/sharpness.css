@@ -1,0 +1,21 @@
+/* Live text stays sharp at the actual display resolution. */
+.sidebar-brand{position:relative;background-image:none;padding:8px 4px;text-align:center;color:#eacd81;display:flex;align-items:center;flex-direction:column}
+.sidebar-brand .brand-mountain{width:81px;height:36px;stroke-width:1;fill:none}
+.sidebar-brand strong{font:700 12px/1.35 'Noto Serif',Georgia,serif;letter-spacing:-.35px}
+.sidebar-brand>span{font:700 7px/1.5 'Noto Serif',Georgia,serif}
+.sidebar-brand p{font-size:6px;letter-spacing:.8px;line-height:1.55;margin-top:8px}
+.heritage-map h2{left:0;top:0;min-width:190px;height:25px;margin:0;padding:7px 9px;background:#202923;font-size:9px}
+.map-marker{position:absolute;display:flex;align-items:flex-start;padding:0;gap:2px;transform:translate(-9px,-7px);text-align:left;white-space:nowrap}
+.map-marker>svg{width:19px;height:24px;fill:#a53e22;color:#ffdda0;stroke-width:2.4;filter:drop-shadow(0 0 4px #f6934c);background:#493a28;border-radius:50% 50% 30% 30%}
+.map-label{position:absolute;display:block;font-size:8px;line-height:15px;font-weight:500;color:#fff1d8;padding:1px 3px;background:#261d16;border:1px solid #806542;border-radius:2px;white-space:nowrap;text-align:left}
+.map-marker.off>svg{fill:#454338;color:#aaa18d;filter:none}.map-marker.off>span{color:#a79e8d}
+.map-legend{position:absolute;left:8px;bottom:19px;background:#1c2422;border:1px solid #6e6b5355;border-radius:3px;padding:5px 7px;min-width:107px;display:grid;gap:3px;font-size:6.5px;color:#e6dfcc;pointer-events:none}
+.map-legend span{display:flex;align-items:center;gap:6px}.map-legend svg{width:9px;height:9px}.map-legend i{width:7px;height:7px;border:2px solid #e78d53;border-radius:50%;box-shadow:0 0 3px #e59746}
+.map-compass{position:absolute;left:17px;top:29px;width:40px;height:49px;background:#222e27;display:flex;flex-direction:column;align-items:center;color:#c6cbb9;font-size:6px;border-radius:50%;pointer-events:none}.map-compass svg{width:29px;height:29px;stroke-width:1}.map-compass small{font-size:5px}
+.map-motto{position:absolute;left:23%;bottom:2px;min-width:40%;padding:5px 5px 2px;background:#17211b;color:#d0b575;font-size:6px;letter-spacing:.5px;pointer-events:none}.map-motto small{display:block;color:#d0b575;font-size:5.5px;line-height:10px}
+.device-error{position:fixed;z-index:20;left:50%;bottom:16px;transform:translateX(-50%);max-width:90vw;padding:10px 16px;background:#4d1914;color:#ffe5c6;border:1px solid #c27b44;border-radius:5px;font-size:13px;box-shadow:0 4px 20px #0008;display:flex;gap:16px;align-items:center}
+.device-settings{border-top:1px solid #64402d;margin-top:16px;padding-top:16px;display:grid;gap:12px}.device-settings h3{margin:0;color:#edd08b;font-size:14px}.device-settings p{font-size:12px}.device-settings button{width:100%}.device-settings .secondary-button{border:1px solid #80603a;padding:10px;border-radius:4px}.connection-good{color:#8aca78!important}.connection-bad{color:#efad84!important}.control-unavailable{opacity:.45}.control-unavailable input{cursor:not-allowed}.schedule-toggle{display:flex!important;align-items:center;gap:8px!important}.schedule-toggle input{width:auto!important}.measurement-empty{display:grid;place-items:center;color:#c8b29b;font-size:9px;height:100%}
+
+.heritage-map h2{min-width:0;width:30%;height:23px}.map-compass{left:2%;top:8.5%;width:10%;height:19%;border-radius:0}.map-legend{left:2%;top:73%;bottom:auto;width:21%;height:20%;min-width:0}.map-motto{left:24%;width:31%;min-width:0;bottom:1%;font-size:5.5px}.map-motto small{font-size:5px;letter-spacing:0}
+
+.sidebar-brand .brand-mountain{width:94px;height:37px;flex-shrink:0;background:url('/reference.jpg') -83px -55px / 1280px 720px;}
