@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#4a1815" />
+      <stop offset="60%" stop-color="#2a0c0b" />
+      <stop offset="100%" stop-color="#180504" />
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#ffecb3" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#f5c459" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#e5a83b" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe69c" />
+      <stop offset="50%" stop-color="#dfb153" />
+      <stop offset="100%" stop-color="#b68328" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#gold)" stroke-width="3" stroke-opacity="0.4" />
+
+  <!-- Ambient Light Glow -->
+  <circle cx="256" cy="235" r="160" fill="url(#glow)" />
+
+  <!-- Radiating light rays -->
+  <g stroke="url(#gold)" stroke-width="4" stroke-linecap="round" opacity="0.6">
+    <line x1="256" y1="70" x2="256" y2="100" />
+    <line x1="140" y1="118" x2="162" y2="140" />
+    <line x1="372" y1="118" x2="350" y2="140" />
+    <line x1="90" y1="235" x2="120" y2="235" />
+    <line x1="422" y1="235" x2="392" y2="235" />
+  </g>
+
+  <!-- Lamp / Light Torch Icon -->
+  <g filter="url(#shadow)">
+    <!-- Heritage Star / Sun Motif -->
+    <path d="M 256,120 L 268,175 L 320,165 L 285,205 L 320,245 L 268,235 L 256,290 L 244,235 L 192,245 L 227,205 L 192,165 L 244,175 Z" fill="url(#gold)" />
+    <!-- Center Core -->
+    <circle cx="256" cy="205" r="18" fill="#fff9e6" />
+    <!-- Pedestal / Base -->
+    <path d="M 230,305 C 230,295 282,295 282,305 L 274,370 C 274,380 290,390 300,400 L 212,400 C 222,390 238,380 238,370 Z" fill="url(#gold)" />
+    <rect x="200" y="400" width="112" height="14" rx="6" fill="url(#gold)" />
+  </g>
+
+  <!-- Title Text -->
+  <text x="256" y="455" text-anchor="middle" font-family="'Noto Serif', serif, Georgia" font-size="34" font-weight="bold" fill="#f5db99" letter-spacing="4">ATK LIGHT</text>
+</svg>
