@@ -1,0 +1,31 @@
+{
+  "name": "ATK LIGHT - Trung tâm điều khiển chiếu sáng",
+  "short_name": "ATK LIGHT",
+  "description": "Trung tâm điều khiển chiếu sáng ATK Định Hóa – Thái Nguyên",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#210a09",
+  "theme_color": "#220909",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
